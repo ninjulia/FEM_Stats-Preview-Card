@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0px;
+    padding: 90px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.soft-violet {
+    color: hsl(277, 64%, 61%);
+}
+
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 32px;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 15px;
+    line-height: 25px;
+}
+
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 36px;
+}
+
+h2:last-of-type {
+    margin-bottom: 0;
+}
+
+.subheading {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #9999cc;
+    margin-top: 5px;
+}
+
+main {
+    background-color: #1c1938;
+    border-radius: 5px;
+    box-shadow: 5px 10px #0a0c1b;
+}
+
+.image-container {
+    height: 320px;
+    background-color: hsl(277, 64%, 61%);
+    background-image: url(images/image-header-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    border-radius: 3px 3px 0 0;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+    display: block;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.stats {
+    margin-top: 46px;
+    text-align: center;
+}
+
+/* Attribution styles from FrontEnd Mentor */
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    padding: 35px;
+}
+
+.attribution a {
+    color: hsl(277, 64%, 61%);
+}
+
+@media only screen and (min-width: 992px) {
+
+    body {
+        text-align: left;
+    }
+
+    h1 {
+        font-size: 29px;
+    }
+
+    h2{
+        text-align: left;
+    }
+
+    main {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: stretch;
+    }
+
+    .image-container {
+        flex-grow: 1;
+        height: auto;
+        background-image: url(images/image-header-desktop.jpg);
+        border-radius: 0px 3px 3px 0px;
+    }
+
+    section {
+        padding: 80px 75px;
+        flex-basis: 55%;
+    }
+
+    .stats {
+        display: flex;
+        justify-content: space-between;
+    }
+
+}
