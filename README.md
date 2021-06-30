@@ -1,6 +1,6 @@
-# Frontend Mentor - 3-column preview card component solution
+# Frontend Mentor - Stats preview card component solution
 
-This is a solution to the [3-column preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/3column-preview-card-component-pH92eAR2-). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
+This is a solution to the [Stats preview card component challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/stats-preview-card-component-8JqbgoU62). Frontend Mentor challenges help you improve your coding skills by building realistic projects. 
 
 ## Table of contents
 
@@ -16,6 +16,8 @@ This is a solution to the [3-column preview card component challenge on Frontend
 - [Author](#author)
 - [Acknowledgments](#acknowledgments)
 
+**Note: Delete this note and update the table of contents based on what sections you keep.**
+
 ## Overview
 
 ### The challenge
@@ -23,41 +25,38 @@ This is a solution to the [3-column preview card component challenge on Frontend
 Users should be able to:
 
 - View the optimal layout depending on their device's screen size
-- See hover states for interactive elements
 
 ### Screenshot
 
-[screenshot](https://ninjulia.github.io/FEM_3-Col-Preview-Card/screenshot.png)
+![](./screenshot.png)
 
 ### Links
 
 - Solution URL: [https://github.com/ninjulia/FEM_Stats-Preview-Card](https://github.com/ninjulia/FEM_Stats-Preview-Card)
-- Live Site URL: [https://ninjulia.github.io/FEM_3-Col-Preview-Card](https://ninjulia.github.io/FEM_3-Col-Preview-Card/)
+- Live Site URL: [https://ninjulia.github.io/FEM_Stats-Preview-Card/](https://ninjulia.github.io/FEM_Stats-Preview-Card/)
 
 ## My process
 
 ### Built with
 
 - Semantic HTML5 markup
-- CSS variable properties
+- CSS custom properties
 - Flexbox
 - Mobile-first workflow
 
 ### What I learned
 
-This was coded mobile-first and leverages Flexbox for the layout and used CSS Variables to handle the colors.  As this is a component card, I used H3 tags for the headlines. I could just as well have used H1 tags but felt the H3 was better for extensibility. I also named the different sections based on order so that they might be more reusable as well.  One issue I noticed with flexbox is that it will cause images and buttons to fill the width of their containers and found the solution is to add width:max-content;  
+It's been a while since I coded anything without a framework. For this, I relied heavily on Flexbox to set the layouts, starting with the mobile view.  For the header image, I leveraged background-blend-mode:multiply, which resulted in a slightly richer tone compared to the comp - overall I think it was an improvement.  Leveraging the background-image property did leave me without the option to include alt-text, but for this situation, the image is purely decorative.
 
 ### Continued development
 
-Naming things is hard.  So is keeping padding consistent between elements. In retrospect, I should have set up variables with padding to keep everything consistent. Also, I am not sure about the extensibilyt of using :root as a place to store variables for components.  Ideally, a card component would be part of a larger process coded in SASS, which also would have helped with the color-specific classes.  
+Ideally, this would have been a great chance to use CSS Grid. I think this may have been a better way to handle the image alignment.  I used my best judgment on the padding since I did not have access to the Figma files. I also used pixel values where ideally I would use rems.  I also used longhand notation on the background and flexbox properties, in a production environment I would condense those down.  
+
+### Useful resources
+
+- [Thank god for CSS-Tricks' Flexbox Guide](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) - So so helpful for this
 
 ## Author
 
-- Website - [Julia](https://www.becausejulia.com)
+- Website - [becausejulia.com](https://www.becausejulia.com)
 - Frontend Mentor - [@ninjulia](https://www.frontendmentor.io/profile/ninjulia)
-
-## Acknowledgments
-
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
-
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**

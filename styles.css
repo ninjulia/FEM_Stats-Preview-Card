@@ -1,146 +1,143 @@
-:root {
-    --bright-orange: hsl(31, 77%, 52%);
-    --dark-cyan: hsl(184, 100%, 22%);
-    --very-dark-cyan: hsl(179, 100%, 13%);
-    --transparent-white: hsla(0, 0%, 100%, 0.75);
-    --very-light-gray: hsl(0, 0%, 95%);
-}
-
 * {
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-.card-bg {
-    background-color: var(--very-light-gray);
-    padding: 4em 1em;
+body {
+    margin: 0px;
+    padding: 90px 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: hsl(233, 47%, 7%);
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.75);
     font-family: 'Lexend Deca', sans-serif;
 }
 
-.card-section {
-    display: flex;
-    flex-direction: column;
-    justify-content: stretch;
+.soft-violet {
+    color: hsl(277, 64%, 61%);
 }
 
-.three-col {
-    padding: 3em;
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: bold;
+    line-height: 32px;
+    margin-bottom: 20px;
 }
 
-.three-col img {
-    height: auto;
-    padding-bottom: 2em;
-}
-
-.three-col h3 {
-    font-family: 'Big Shoulders Display', cursive;
-    color: var(--very-light-gray);
-    font-size: 32px;
-    padding-bottom: 1em;
-}
-
-.three-col p {
+p {
     font-size: 15px;
-    color: var(--transparent-white);
-    line-height: 1.75;
-    padding-bottom: 2em;
+    line-height: 25px;
 }
 
-.three-col a {
-    display: inline-block;
-    padding: .5em 1em;
-    background-color: var(--very-light-gray);
-    border: 3px solid var(--very-light-gray);
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 36px;
+}
+
+h2:last-of-type {
+    margin-bottom: 0;
+}
+
+.subheading {
+    display: block;
+    font-size: 10px;
+    text-transform: uppercase;
+    color: #9999cc;
+    margin-top: 5px;
+}
+
+main {
+    background-color: #1c1938;
+    border-radius: 5px;
+    box-shadow: 5px 10px #0a0c1b;
+}
+
+.image-container {
+    height: 320px;
+    background-color: hsl(277, 64%, 61%);
+    background-image: url(images/image-header-mobile.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: multiply;
+    border-radius: 3px 3px 0 0;
+}
+
+.image img {
+    max-width: 100%;
+    height: auto;
+    mix-blend-mode: multiply;
+    display: block;
+}
+
+section {
+    padding: 40px 20px;
+}
+
+.stats {
+    margin-top: 46px;
     text-align: center;
-    text-decoration: none;
-    cursor: pointer;
-    border-radius: 1.5em;
-    font-size: 1em;
 }
 
-.three-col a:hover {
-    border: 3px solid var(--very-light-gray);
-    color: var(--very-light-gray);
-}
-
-.first {
-    background-color: var(--bright-orange);
-    border-radius: 5px 5px 0px 0px;
-}
-
-.first a {
-    color: var(--bright-orange);
-}
-
-.first a:hover {
-    background-color: var(--bright-orange);
-}
-
-.second {
-    background-color: var(--dark-cyan);
-}
-
-.second a {
-    color: var(--dark-cyan);
-}
-
-.second a:hover {
-    background-color: var(--dark-cyan);
-}
-
-.third {
-    background-color: var(--very-dark-cyan);
-    border-radius: 0px 0px 5px 5px;
-}
-
-.third a {
-    color: var(--very-dark-cyan);
-}
-
-.third a:hover {
-    background-color: var(--very-dark-cyan);
-}
-
+/* Attribution styles from FrontEnd Mentor */
 
 .attribution {
     font-size: 11px;
     text-align: center;
-    padding: 2em;
+    padding: 35px;
 }
 
 .attribution a {
-    color: hsl(228, 45%, 44%);
+    color: hsl(277, 64%, 61%);
 }
 
-@media only screen and (min-width: 1440px) {
-    .card-section {
-        flex-direction: row;
-        max-width: 1024px;
-        margin: 0 auto;
+@media only screen and (min-width: 992px) {
+
+    body {
+        text-align: left;
     }
 
-    .three-col {
+    h1 {
+        font-size: 29px;
+    }
+
+    h2{
+        text-align: left;
+    }
+
+    main {
         display: flex;
-        flex-direction: column;
+        flex-direction: row-reverse;
         justify-content: space-between;
+        align-items: stretch;
     }
 
-    .three-col p {
-        padding-bottom: 3em;
+    .image-container {
+        flex-grow: 1;
+        height: auto;
+        background-image: url(images/image-header-desktop.jpg);
+        border-radius: 0px 3px 3px 0px;
     }
 
-    .three-col img,
-    .three-col a {
-        width: max-content;
+    section {
+        padding: 80px 75px;
+        flex-basis: 55%;
     }
 
-    .first {
-        border-radius: 5px 0px 0px 5px;
-    }
-
-    .third {
-        border-radius: 0px 5px 5px 0px;
+    .stats {
+        display: flex;
+        justify-content: space-between;
     }
 
 }
